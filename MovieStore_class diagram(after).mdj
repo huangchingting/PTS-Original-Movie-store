@@ -2589,6 +2589,19 @@
 							"width": 345,
 							"height": 25,
 							"text": "有多種方式可以去做某件事，要根據條件去選擇某種方式"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAF9zL3/xy7SJBk=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 408,
+							"top": 432,
+							"width": 177,
+							"height": 100,
+							"text": "class Movie\n{\n    title: string;\n    recommended: boolean;\n    publishedDate: Date;\n}"
 						}
 					]
 				},
