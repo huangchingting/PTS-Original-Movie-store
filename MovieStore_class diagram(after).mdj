@@ -2638,7 +2638,7 @@
 							"left": 1000,
 							"top": 1512,
 							"width": 273,
-							"height": 173,
+							"height": 186,
 							"text": "class EnglishStrategy implements Stragety\n{\n    public sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movieA, _)=>\n        {\n            retrun movieA.recommended ? 1 : -1;\n        })\n    }\n}"
 						},
 						{
@@ -2664,7 +2664,7 @@
 							"left": 1824,
 							"top": 1512,
 							"width": 265,
-							"height": 73,
+							"height": 85,
 							"text": "class DefaultStrategy implements Strategy\n{\n    public sortMovies(movies: Movie[ ]){ }\n\n}"
 						},
 						{
@@ -2687,11 +2687,11 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;13;0",
-							"left": 392,
-							"top": 592,
-							"width": 441,
-							"height": 443,
-							"text": "class PTS_MovieStore\n{\n    allMovies: Movie[ ];\n    constructor( )\n    {\n        const movie1 = new Movie('movie 1', true, new Date(''2021-01-01'));\n        const movie1 = new Movie('movie 1', false, new Date(''2021-02-01'));\n        this.allMovies = [movie1, movie2]\n    }\n    \n    public shoeHomePage(userLanguage: string)\n    {\n        let context: Context;\n        if(userLanguage == 'en')\n        {\n            context = new Context(new EnglishStrategy());\n        }\n        else if(userLanguage == 'zh')\n        {\n            context = new Context(new ChineseStrategy());\n        }\n        else\n        {\n            context = new Context(new DafaultStrategy());\n        }\n        console.log(context.homePageMovies(this.allMovies));\n    }\n}"
+							"left": 344,
+							"top": 496,
+							"width": 473,
+							"height": 505,
+							"text": "class PTS_MovieStore\n{\n    allMovies: Movie[ ];\n    constructor( )\n    {\n        const movie1 = new Movie('無聲', true, new Date(''2021-05-02'));\n        const movie2 = new Movie('白日夢冒險王', false, new Date(''2021-02-11'));\n        const movie3 = new Movie('movie 2', false, new Date(''2021-02-01'));\n        const movie4 = new Movie('movie 2', false, new Date(''2021-02-01'));\n        const movie5 = new Movie('movie 2', false, new Date(''2021-02-01'));\n        const movie6 = new Movie('movie 2', false, new Date(''2021-02-01'));\n\n        this.allMovies = [movie1, movie2, movie3, movie4, movie5, movie6]\n    }\n    \n    public shoeHomePage(userLanguage: string)\n    {\n        let context: Context;\n        if(userLanguage == 'en')\n        {\n            context = new Context(new EnglishStrategy());\n        }\n        else if(userLanguage == 'zh')\n        {\n            context = new Context(new ChineseStrategy());\n        }\n        else\n        {\n            context = new Context(new DafaultStrategy());\n        }\n        console.log(context.homePageMovies(this.allMovies));\n    }\n}"
 						},
 						{
 							"_type": "UMLNoteView",
