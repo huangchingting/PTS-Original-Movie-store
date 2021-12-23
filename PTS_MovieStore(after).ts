@@ -39,7 +39,18 @@ class ChineseStrategy implements Strategy
         })
     }
 }
-  
+//
+class TaiwaneseHokkienStrategy implements Strategy  //台語 
+{
+    public sortMovies(movies: Movie[]) 
+    {
+        movies.sort((movieA, _) => 
+        {
+            return movieA.publishedDate < '1950-01-01' ? 1 : -1;
+        })
+    }
+}
+//
 class DefaultStrategy implements Strategy 
 {
     public sortMovies(movies: Movie[]) {}
