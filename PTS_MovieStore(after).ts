@@ -46,7 +46,7 @@ class TaiwaneseHokkienStrategy implements Strategy  //台語
     {
         movies.sort((movieA, _) => 
         {
-            return movieA.publishedDate < '1950-01-01' ? 1 : -1;
+            
         })
     }
 }
