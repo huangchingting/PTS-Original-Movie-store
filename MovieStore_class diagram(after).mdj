@@ -2656,7 +2656,7 @@
 							"top": 1512,
 							"width": 273,
 							"height": 186,
-							"text": "class EnglishStrategy implements Stragety\n{\n    public sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            return movie.recommended ? 1 : -1;\n        })\n    }\n}\n\n//recommended=true裡隨機挑一個推薦"
+							"text": "class EnglishStrategy implements Stragety\n{\n    private sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            return movie.recommended ? 1 : -1;\n        })\n    }\n}\n\n//recommended=true裡隨機挑一個推薦"
 						},
 						{
 							"_type": "UMLNoteView",
@@ -2669,7 +2669,7 @@
 							"top": 1712,
 							"width": 433,
 							"height": 205,
-							"text": "class ChineseStrategy implements Stragety\n{\n    public sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            choose two movies-> movieA, movieB;\n            return movieA.publishedDate > movieB.publishedDate ? 1 : -1;\n        })\n    }\n}\n\n//隨機挑兩個movie比較"
+							"text": "class ChineseStrategy implements Stragety\n{\n    private sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            choose two movies-> movieA, movieB;\n            return movieA.publishedDate > movieB.publishedDate ? 1 : -1;\n        })\n    }\n}\n\n//隨機挑兩個movie比較"
 						},
 						{
 							"_type": "UMLNoteView",
@@ -2682,7 +2682,7 @@
 							"top": 1512,
 							"width": 265,
 							"height": 117,
-							"text": "class DefaultStrategy implements Strategy\n{\n    public sortMovies(movies: Movie[ ])\n    {\n        return random(movie1~movie11);\n    }\n\n}"
+							"text": "class DefaultStrategy implements Strategy\n{\n    private sortMovies(movies: Movie[ ])\n    {\n        return random(movie1~movie11);\n    }\n\n}"
 						},
 						{
 							"_type": "UMLNoteView",
@@ -2695,7 +2695,7 @@
 							"top": 672,
 							"width": 401,
 							"height": 340,
-							"text": "//Context is the object to be used by the client (PTS_MoviesStore).\n\nclass Context\n{\n    strategy: Strategy;\n    constructor(strategy: Strategy)\n    {\n        this.strategy = strategy;\n    }\n   \n    public setStrategy(strategy: Strategy)\n    {\n        this.strategy = strategy;\n    }\n\n    public homePageMovies(allMovies: Movie[ ]): Movie[ ]\n    {\n        const newOrder = [...allMovies];\n        this.strategy.sortMovies(newOrder);\n        return newOrder;\n    }\n}"
+							"text": "//Context is the object to be used by the client (PTS_MoviesStore).\n\nclass Context\n{\n    strategy: Strategy;\n    constructor(strategy: Strategy)\n    {\n        this.strategy = strategy;\n    }\n   \n    private setStrategy(strategy: Strategy)\n    {\n        this.strategy = strategy;\n    }\n\n    private homePageMovies(allMovies: Movie[ ]): Movie[ ]\n    {\n        const newOrder = [...allMovies];\n        this.strategy.sortMovies(newOrder);\n        return newOrder;\n    }\n}"
 						},
 						{
 							"_type": "UMLNoteView",
@@ -2705,7 +2705,7 @@
 							},
 							"font": "Arial;13;0",
 							"left": 272,
-							"top": 392,
+							"top": 384,
 							"width": 545,
 							"height": 655,
 							"text": "class PTS_MovieStore\n{\n    allMovies: Movie[ ];\n    constructor( )\n    {\n        const movie1 = new Movie('無聲', true, new Date(''2021-05-02'), \"1.jpg\");\n        const movie2 = new Movie('白日夢冒險王', false, new Date(''2021-02-11'), \"2.jpg\");\n        const movie3 = new Movie('訪客', false, new Date(''2020-11-29'), \"3.jpg\");\n        const movie4 = new Movie('媽!我阿榮啦', true, new Date(''2020-11-22'), \"4.jpg\");\n        const movie5 = new Movie('殺人之夏', false, new Date(''2020-05-12'), \"5.jpg\");\n        const movie6 = new Movie('無法辯護', false, new Date(''1968-12-23'), \"6.jpg\");\n        const movie7 = new Movie('靈佔', true, new Date(''2020-12-16'), \"7.jpg\");\n        const movie8 = new Movie('完美正義', false, new Date(''2020-12-30'), \"8.jpg\");\n        const movie9 = new Movie('再看我一眼', true, new Date(''2020-10-29'), \"9.jpg\");\n        const movie10 = new Movie('前世情人的情人', false, new Date(''1960-01-19'), \"10.jpg\");\n        const movie11 = new Movie('阿嬤的秘密', false, new Date(''1965-03-26'), \"11.jpg\");\n\n        this.allMovies = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, \n                                   movie8, movie9, movie10, movie11]\n    }\n    \n    public shoeHomePage(userLanguage: string)\n    {\n        let context: Context;\n        if(userLanguage == 'en')\n        {\n            context = new Context(new EnglishStrategy());\n        }\n        else if(userLanguage == 'zh')\n        {\n            context = new Context(new ChineseStrategy());\n        }\n        else if(userLanguage == 'ha')\n        {\n            context = new Context(new TaiwaneseHakkienStrategy());\n        }\n        else\n        {\n            context = new Context(new DafaultStrategy());\n        }\n        console.log(context.homePageMovies(this.allMovies));\n    }\n}"
@@ -3018,7 +3018,7 @@
 							"top": 1512,
 							"width": 345,
 							"height": 173,
-							"text": "class TaiwaneseHakkienStrategy implements Stragety\n{\n    public sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            return movie.pulishedDate < \"1970-01-01\" ? 1 : -1;\n        })\n    }\n}"
+							"text": "class TaiwaneseHakkienStrategy implements Stragety\n{\n    private sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            return movie.pulishedDate < \"1970-01-01\" ? 1 : -1;\n        })\n    }\n}"
 						},
 						{
 							"_type": "UMLClassView",
@@ -3232,201 +3232,6 @@
 							},
 							"templateParameterCompartment": {
 								"$ref": "AAAAAAF+BD0kFA49eg4="
-							}
-						},
-						{
-							"_type": "UMLClassView",
-							"_id": "AAAAAAF+BD9x2hCC1EY=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"model": {
-								"$ref": "AAAAAAF+BD9x2RCA1fo="
-							},
-							"subViews": [
-								{
-									"_type": "UMLNameCompartmentView",
-									"_id": "AAAAAAF+BD9x2hCD8FQ=",
-									"_parent": {
-										"$ref": "AAAAAAF+BD9x2hCC1EY="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BD9x2RCA1fo="
-									},
-									"subViews": [
-										{
-											"_type": "LabelView",
-											"_id": "AAAAAAF+BD9x2hCEc7Q=",
-											"_parent": {
-												"$ref": "AAAAAAF+BD9x2hCD8FQ="
-											},
-											"visible": false,
-											"font": "Arial;13;0",
-											"left": -16,
-											"top": 480,
-											"height": 13
-										},
-										{
-											"_type": "LabelView",
-											"_id": "AAAAAAF+BD9x2hCFi7E=",
-											"_parent": {
-												"$ref": "AAAAAAF+BD9x2hCD8FQ="
-											},
-											"font": "Arial;13;1",
-											"left": 549,
-											"top": 1575,
-											"width": 214,
-											"height": 13,
-											"text": "YoutubeIntroduction"
-										},
-										{
-											"_type": "LabelView",
-											"_id": "AAAAAAF+BD9x2hCG0wo=",
-											"_parent": {
-												"$ref": "AAAAAAF+BD9x2hCD8FQ="
-											},
-											"visible": false,
-											"font": "Arial;13;0",
-											"left": -16,
-											"top": 480,
-											"width": 73.67724609375,
-											"height": 13,
-											"text": "(from Model)"
-										},
-										{
-											"_type": "LabelView",
-											"_id": "AAAAAAF+BD9x2hCHxC4=",
-											"_parent": {
-												"$ref": "AAAAAAF+BD9x2hCD8FQ="
-											},
-											"visible": false,
-											"font": "Arial;13;0",
-											"left": -16,
-											"top": 480,
-											"height": 13,
-											"horizontalAlignment": 1
-										}
-									],
-									"font": "Arial;13;0",
-									"left": 544,
-									"top": 1568,
-									"width": 224,
-									"height": 25,
-									"stereotypeLabel": {
-										"$ref": "AAAAAAF+BD9x2hCEc7Q="
-									},
-									"nameLabel": {
-										"$ref": "AAAAAAF+BD9x2hCFi7E="
-									},
-									"namespaceLabel": {
-										"$ref": "AAAAAAF+BD9x2hCG0wo="
-									},
-									"propertyLabel": {
-										"$ref": "AAAAAAF+BD9x2hCHxC4="
-									}
-								},
-								{
-									"_type": "UMLAttributeCompartmentView",
-									"_id": "AAAAAAF+BD9x2hCIxXY=",
-									"_parent": {
-										"$ref": "AAAAAAF+BD9x2hCC1EY="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BD9x2RCA1fo="
-									},
-									"font": "Arial;13;0",
-									"left": 544,
-									"top": 1593,
-									"width": 224,
-									"height": 10
-								},
-								{
-									"_type": "UMLOperationCompartmentView",
-									"_id": "AAAAAAF+BD9x2hCJ3wk=",
-									"_parent": {
-										"$ref": "AAAAAAF+BD9x2hCC1EY="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BD9x2RCA1fo="
-									},
-									"subViews": [
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAF+BWPi3Reurmo=",
-											"_parent": {
-												"$ref": "AAAAAAF+BD9x2hCJ3wk="
-											},
-											"model": {
-												"$ref": "AAAAAAF+BWPiuBeiAKQ="
-											},
-											"font": "Arial;13;0",
-											"left": 549,
-											"top": 1608,
-											"width": 214,
-											"height": 13,
-											"text": "-youtubeChannel(movies)",
-											"horizontalAlignment": 0
-										}
-									],
-									"font": "Arial;13;0",
-									"left": 544,
-									"top": 1603,
-									"width": 224,
-									"height": 23
-								},
-								{
-									"_type": "UMLReceptionCompartmentView",
-									"_id": "AAAAAAF+BD9x2hCKALg=",
-									"_parent": {
-										"$ref": "AAAAAAF+BD9x2hCC1EY="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BD9x2RCA1fo="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": -8,
-									"top": 240,
-									"width": 10,
-									"height": 10
-								},
-								{
-									"_type": "UMLTemplateParameterCompartmentView",
-									"_id": "AAAAAAF+BD9x2hCLj6s=",
-									"_parent": {
-										"$ref": "AAAAAAF+BD9x2hCC1EY="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BD9x2RCA1fo="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": -8,
-									"top": 240,
-									"width": 10,
-									"height": 10
-								}
-							],
-							"font": "Arial;13;0",
-							"containerChangeable": true,
-							"left": 544,
-							"top": 1568,
-							"width": 224,
-							"height": 160,
-							"nameCompartment": {
-								"$ref": "AAAAAAF+BD9x2hCD8FQ="
-							},
-							"attributeCompartment": {
-								"$ref": "AAAAAAF+BD9x2hCIxXY="
-							},
-							"operationCompartment": {
-								"$ref": "AAAAAAF+BD9x2hCJ3wk="
-							},
-							"receptionCompartment": {
-								"$ref": "AAAAAAF+BD9x2hCKALg="
-							},
-							"templateParameterCompartment": {
-								"$ref": "AAAAAAF+BD9x2hCLj6s="
 							}
 						},
 						{
@@ -3703,279 +3508,6 @@
 							}
 						},
 						{
-							"_type": "UMLAssociationView",
-							"_id": "AAAAAAF+BWVZDBom4Pk=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"model": {
-								"$ref": "AAAAAAF+BWVZDBoiOOE="
-							},
-							"subViews": [
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAF+BWVZDBonuZk=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBoiOOE="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 677,
-									"top": 1522,
-									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 15,
-									"hostEdge": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"edgePosition": 1
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAF+BWVZDBooiO0=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBoiOOE="
-									},
-									"visible": null,
-									"font": "Arial;13;0",
-									"left": 692,
-									"top": 1523,
-									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 30,
-									"hostEdge": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"edgePosition": 1
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAF+BWVZDBopOTI=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBoiOOE="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 648,
-									"top": 1521,
-									"height": 13,
-									"alpha": -1.5707963267948966,
-									"distance": 15,
-									"hostEdge": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"edgePosition": 1
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAF+BWVZDBoqjE8=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBojixk="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 679,
-									"top": 1509,
-									"height": 13,
-									"alpha": 0.5235987755982988,
-									"distance": 30,
-									"hostEdge": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"edgePosition": 2
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAF+BWVZDBoreso=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBojixk="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 692,
-									"top": 1513,
-									"height": 13,
-									"alpha": 0.7853981633974483,
-									"distance": 40,
-									"hostEdge": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"edgePosition": 2
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAF+BWVZDBosed8=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBojixk="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 652,
-									"top": 1503,
-									"height": 13,
-									"alpha": -0.5235987755982988,
-									"distance": 25,
-									"hostEdge": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"edgePosition": 2
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAF+BWVZDBotEqs=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBokGSc="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 677,
-									"top": 1536,
-									"height": 13,
-									"alpha": -0.5235987755982988,
-									"distance": 30,
-									"hostEdge": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									}
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAF+BWVZDBouQaI=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBokGSc="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 691,
-									"top": 1534,
-									"height": 13,
-									"alpha": -0.7853981633974483,
-									"distance": 40,
-									"hostEdge": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									}
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAF+BWVZDBovm0E=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBokGSc="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 649,
-									"top": 1538,
-									"height": 13,
-									"alpha": 0.5235987755982988,
-									"distance": 25,
-									"hostEdge": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									}
-								},
-								{
-									"_type": "UMLQualifierCompartmentView",
-									"_id": "AAAAAAF+BWVZDBowOJU=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBojixk="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 80,
-									"top": 32,
-									"width": 10,
-									"height": 10
-								},
-								{
-									"_type": "UMLQualifierCompartmentView",
-									"_id": "AAAAAAF+BWVZDBoxUoE=",
-									"_parent": {
-										"$ref": "AAAAAAF+BWVZDBom4Pk="
-									},
-									"model": {
-										"$ref": "AAAAAAF+BWVZDBokGSc="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"left": 80,
-									"top": 32,
-									"width": 10,
-									"height": 10
-								}
-							],
-							"font": "Arial;13;0",
-							"head": {
-								"$ref": "AAAAAAF+BD9x2hCC1EY="
-							},
-							"tail": {
-								"$ref": "AAAAAAF9pBYhp0mt97M="
-							},
-							"lineStyle": 1,
-							"points": "666:1489;661:1567",
-							"showVisibility": true,
-							"nameLabel": {
-								"$ref": "AAAAAAF+BWVZDBonuZk="
-							},
-							"stereotypeLabel": {
-								"$ref": "AAAAAAF+BWVZDBooiO0="
-							},
-							"propertyLabel": {
-								"$ref": "AAAAAAF+BWVZDBopOTI="
-							},
-							"tailRoleNameLabel": {
-								"$ref": "AAAAAAF+BWVZDBoqjE8="
-							},
-							"tailPropertyLabel": {
-								"$ref": "AAAAAAF+BWVZDBoreso="
-							},
-							"tailMultiplicityLabel": {
-								"$ref": "AAAAAAF+BWVZDBosed8="
-							},
-							"headRoleNameLabel": {
-								"$ref": "AAAAAAF+BWVZDBotEqs="
-							},
-							"headPropertyLabel": {
-								"$ref": "AAAAAAF+BWVZDBouQaI="
-							},
-							"headMultiplicityLabel": {
-								"$ref": "AAAAAAF+BWVZDBovm0E="
-							},
-							"tailQualifiersCompartment": {
-								"$ref": "AAAAAAF+BWVZDBowOJU="
-							},
-							"headQualifiersCompartment": {
-								"$ref": "AAAAAAF+BWVZDBoxUoE="
-							}
-						},
-						{
 							"_type": "UMLNoteView",
 							"_id": "AAAAAAF+BWd7pB5T1Kk=",
 							"_parent": {
@@ -3985,8 +3517,8 @@
 							"left": 264,
 							"top": 1744,
 							"width": 265,
-							"height": 117,
-							"text": "class MovieScenery\n{\n    private location(movies: Movie[ ])\n    {\n        console.log(this.scenery[ ]);\n    }\n\n}"
+							"height": 209,
+							"text": "class MovieScenery\n{\n    scenery[ ]: string\n    constructor(scenery[ ]:string)\n    {\n        this.scenery[ ] = scenery[ ];\n    }\n\n    private location(movies: Movie[ ])\n    {\n        console.log(this.scenery[ ]);\n    }\n\n}"
 						}
 					]
 				},
