@@ -382,7 +382,7 @@
 											"top": 1124,
 											"width": 215,
 											"height": 13,
-											"text": "+homePageMovies(allMovies)",
+											"text": "-homePageMovies(allMovies)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2627,9 +2627,9 @@
 							},
 							"font": "Arial;13;0",
 							"left": 1440,
-							"top": 944,
+							"top": 920,
 							"width": 193,
-							"height": 98,
+							"height": 111,
 							"text": "interface Strategy\n{\n    sortMovies(movies: Movie[ ])\n}\n//Strategy 是共通的 interface"
 						},
 						{
@@ -2642,7 +2642,7 @@
 							"left": 984,
 							"top": 1520,
 							"width": 273,
-							"height": 207,
+							"height": 233,
 							"text": "class EnglishStrategy implements Stragety\n{\n    private sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            random(movie1~movie11)\n            return movie.recommended ? 1 : -1;\n        })\n    }\n}\n\n//英文電影會根據recommended挑選，從\nrecommended=true裡隨機挑一個推薦"
 						},
 						{
@@ -2653,9 +2653,9 @@
 							},
 							"font": "Arial;13;0",
 							"left": 1152,
-							"top": 1744,
+							"top": 1768,
 							"width": 433,
-							"height": 192,
+							"height": 205,
 							"text": "class ChineseStrategy implements Stragety\n{\n    private sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            choose two movies-> movieA, movieB;\n            return movieA.publishedDate > movieB.publishedDate ? 1 : -1;\n        })\n    }\n}\n\n//中文電影是隨機挑兩個movie比較出版日期，出版日期新的會背回傳"
 						},
 						{
@@ -2682,7 +2682,7 @@
 							"top": 680,
 							"width": 401,
 							"height": 313,
-							"text": "class Context\n{\n    strategy: Strategy;\n    constructor(strategy: Strategy)\n    {\n        this.strategy = strategy;\n    }\n   \n    private setStrategy(strategy: Strategy)\n    {\n        this.strategy = strategy;\n    }\n\n    public homePageMovies(allMovies: Movie[ ]): Movie[ ]\n    {\n        const newOrder = [...allMovies];\n        this.strategy.sortMovies(newOrder);\n        return newOrder;\n    }\n}\n//context可以無痛切換不同的strategy"
+							"text": "class Context\n{\n    strategy: Strategy;\n    constructor(strategy: Strategy)\n    {\n        this.strategy = strategy;\n    }\n   \n    private setStrategy(strategy: Strategy)\n    {\n        this.strategy = strategy;\n    }\n\n    private homePageMovies(allMovies: Movie[ ]): Movie[ ]\n    {\n        const newOrder = [...allMovies];\n        this.strategy.sortMovies(newOrder);\n        return newOrder;\n    }\n}\n//context可以無痛切換不同的strategy"
 						},
 						{
 							"_type": "UMLNoteView",
@@ -2763,7 +2763,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -736,
-											"width": 73.67724609375,
+											"width": 80.68505859375,
 											"height": 13,
 											"text": "(from Model)"
 										},
@@ -3004,7 +3004,7 @@
 							"left": 1464,
 							"top": 1520,
 							"width": 345,
-							"height": 188,
+							"height": 201,
 							"text": "class TaiwaneseHakkienStrategy implements Stragety\n{\n    private sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            return movie.pulishedDate < \"1970-01-01\" ? 1 : -1;\n        })\n    }\n}\n//台語電影是設定只回傳在1970年之前出版的電影"
 						},
 						{
@@ -3062,7 +3062,7 @@
 											"font": "Arial;13;0",
 											"left": 320,
 											"top": -112,
-											"width": 73.67724609375,
+											"width": 80.68505859375,
 											"height": 13,
 											"text": "(from Model)"
 										},
@@ -3530,7 +3530,7 @@
 							"left": 24,
 							"top": 88,
 							"width": 425,
-							"height": 85,
+							"height": 98,
 							"text": "先定出多種不同做法之間共通的 interface，把不同的做法變成一個一個\n獨立的 strategy class，然後再根據需求去決定現在要使用哪一個 \nstrategy 並放到 context 裡。\nStrategy Pattern 適合用在當有多種方式可以去做某件事，但是要根據\n某些條件選擇某一種方式的時候。"
 						},
 						{
@@ -3542,7 +3542,7 @@
 							"font": "Arial;13;0",
 							"left": 328,
 							"top": 192,
-							"width": 501.04443359375,
+							"width": 507.24609375,
 							"height": 113,
 							"text": "建一個PTS_MovieStore物件，將使用者的語言輸入，PTS_MovieStore會使用\ncontext，做為切換strategy的媒介，context會決定要用哪個strategy，只需要連接\ninterface stragety，關於strategy的實作就在interface下面把細節寫得更仔細就可以，\nPTS_MovieStore只需要拿context來使用就好，PTS_MovieStore裡面也有movie，\n然後推薦的movie會有movieScenery來讓使用者可以根據推薦電影裡的景點去採點，\n回味或是預告電影裡的場景。"
 						},
@@ -3647,7 +3647,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "1376:1488;1378:1743"
+							"points": "1376:1488;1378:1768"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -3717,7 +3717,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "1536:1040;1536:1056"
+							"points": "1536:1024;1536:1056"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -3892,6 +3892,7 @@
 								"$ref": "AAAAAAF9o/t6B9plUIg="
 							},
 							"name": "homePageMovies",
+							"visibility": "private",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4109,7 +4110,8 @@
 								"$ref": "AAAAAAF9pBYhp0mr7dA="
 							},
 							"name": "image",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -4315,7 +4317,8 @@
 								"$ref": "AAAAAAF+BD0kEg4yVHA="
 							},
 							"name": "scenery[ ]",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					],
 					"operations": [
