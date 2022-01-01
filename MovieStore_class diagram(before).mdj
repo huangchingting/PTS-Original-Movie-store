@@ -47,8 +47,8 @@
 												"$ref": "AAAAAAF9o/tOPto+mdM="
 											},
 											"font": "Arial;13;0",
-											"left": 1061,
-											"top": 389,
+											"left": 901,
+											"top": 397,
 											"width": 215,
 											"height": 13,
 											"text": "«interface»"
@@ -60,8 +60,8 @@
 												"$ref": "AAAAAAF9o/tOPto+mdM="
 											},
 											"font": "Arial;13;1",
-											"left": 1061,
-											"top": 404,
+											"left": 901,
+											"top": 412,
 											"width": 215,
 											"height": 13,
 											"text": "Strategy"
@@ -74,8 +74,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1136,
-											"top": 384,
+											"left": 816,
+											"top": 400,
 											"width": 80.68505859375,
 											"height": 13,
 											"text": "(from Model)"
@@ -88,15 +88,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1136,
-											"top": 384,
+											"left": 816,
+											"top": 400,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1056,
-									"top": 384,
+									"left": 896,
+									"top": 392,
 									"width": 225,
 									"height": 38,
 									"stereotypeLabel": {
@@ -122,8 +122,8 @@
 										"$ref": "AAAAAAF9o/tOPdo7eMQ="
 									},
 									"font": "Arial;13;0",
-									"left": 1056,
-									"top": 422,
+									"left": 896,
+									"top": 430,
 									"width": 225,
 									"height": 10
 								},
@@ -147,8 +147,8 @@
 												"$ref": "AAAAAAF9pCZJH0rUzlk="
 											},
 											"font": "Arial;13;0",
-											"left": 1061,
-											"top": 437,
+											"left": 901,
+											"top": 445,
 											"width": 215,
 											"height": 13,
 											"text": "+sortMovies(movies)",
@@ -156,8 +156,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1056,
-									"top": 432,
+									"left": 896,
+									"top": 440,
 									"width": 225,
 									"height": 23
 								},
@@ -172,8 +172,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 256,
-									"top": 368,
+									"left": 96,
+									"top": 376,
 									"width": 10,
 									"height": 10
 								},
@@ -188,16 +188,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 256,
-									"top": 368,
+									"left": 96,
+									"top": 376,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 1056,
-							"top": 384,
+							"left": 896,
+							"top": 392,
 							"width": 225,
 							"height": 161,
 							"nameCompartment": {
@@ -245,7 +245,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -672,
-											"top": -256,
+											"top": -240,
 											"height": 13
 										},
 										{
@@ -256,7 +256,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 181,
-											"top": 391,
+											"top": 399,
 											"width": 215,
 											"height": 13,
 											"text": "PTS_MovieStore"
@@ -270,7 +270,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -672,
-											"top": -256,
+											"top": -240,
 											"width": 80.68505859375,
 											"height": 13,
 											"text": "(from Model)"
@@ -284,14 +284,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -672,
-											"top": -256,
+											"top": -240,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 176,
-									"top": 384,
+									"top": 392,
 									"width": 225,
 									"height": 25,
 									"stereotypeLabel": {
@@ -328,7 +328,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 181,
-											"top": 414,
+											"top": 422,
 											"width": 215,
 											"height": 13,
 											"text": "-allMovies",
@@ -345,7 +345,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 181,
-											"top": 429,
+											"top": 437,
 											"width": 215,
 											"height": 13,
 											"text": "-title",
@@ -362,7 +362,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 181,
-											"top": 444,
+											"top": 452,
 											"width": 215,
 											"height": 13,
 											"text": "-recommended",
@@ -379,7 +379,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 181,
-											"top": 459,
+											"top": 467,
 											"width": 215,
 											"height": 13,
 											"text": "-publishedDate",
@@ -396,7 +396,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 181,
-											"top": 474,
+											"top": 482,
 											"width": 215,
 											"height": 13,
 											"text": "-image",
@@ -405,7 +405,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 176,
-									"top": 409,
+									"top": 417,
 									"width": 225,
 									"height": 83
 								},
@@ -430,7 +430,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 181,
-											"top": 497,
+											"top": 505,
 											"width": 215,
 											"height": 13,
 											"text": "-showHomePage(userLanguage)",
@@ -439,7 +439,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 176,
-									"top": 492,
+									"top": 500,
 									"width": 225,
 									"height": 23
 								},
@@ -455,7 +455,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -320,
-									"top": 216,
+									"top": 224,
 									"width": 10,
 									"height": 10
 								},
@@ -471,7 +471,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -320,
-									"top": 216,
+									"top": 224,
 									"width": 10,
 									"height": 10
 								}
@@ -479,7 +479,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 176,
-							"top": 384,
+							"top": 392,
 							"width": 225,
 							"height": 161,
 							"nameCompartment": {
@@ -526,8 +526,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1280,
-											"top": -16,
+											"left": 960,
 											"height": 13
 										},
 										{
@@ -537,8 +536,8 @@
 												"$ref": "AAAAAAF9pBfeDEnsGT4="
 											},
 											"font": "Arial;13;1",
-											"left": 789,
-											"top": 655,
+											"left": 629,
+											"top": 663,
 											"width": 215,
 											"height": 13,
 											"text": "EnglishStrategy"
@@ -551,8 +550,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1280,
-											"top": -16,
+											"left": 960,
 											"width": 80.68505859375,
 											"height": 13,
 											"text": "(from Model)"
@@ -565,15 +563,14 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1280,
-											"top": -16,
+											"left": 960,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 784,
-									"top": 648,
+									"left": 624,
+									"top": 656,
 									"width": 225,
 									"height": 25,
 									"stereotypeLabel": {
@@ -599,8 +596,8 @@
 										"$ref": "AAAAAAF9pBfeC0npRyQ="
 									},
 									"font": "Arial;13;0",
-									"left": 784,
-									"top": 673,
+									"left": 624,
+									"top": 681,
 									"width": 225,
 									"height": 10
 								},
@@ -624,8 +621,8 @@
 												"$ref": "AAAAAAF9pCi750smKbo="
 											},
 											"font": "Arial;13;0",
-											"left": 789,
-											"top": 688,
+											"left": 629,
+											"top": 696,
 											"width": 215,
 											"height": 13,
 											"text": "-sortMovies(movies)",
@@ -633,8 +630,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 784,
-									"top": 683,
+									"left": 624,
+									"top": 691,
 									"width": 225,
 									"height": 23
 								},
@@ -649,8 +646,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 952,
-									"top": -288,
+									"left": 792,
+									"top": -280,
 									"width": 10,
 									"height": 10
 								},
@@ -665,16 +662,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 952,
-									"top": -288,
+									"left": 792,
+									"top": -280,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 784,
-							"top": 648,
+							"left": 624,
+							"top": 656,
 							"width": 225,
 							"height": 161,
 							"nameCompartment": {
@@ -721,8 +718,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1376,
-											"top": -96,
+											"left": 1056,
+											"top": -80,
 											"height": 13
 										},
 										{
@@ -732,8 +729,8 @@
 												"$ref": "AAAAAAF9pBgccUoWLoc="
 											},
 											"font": "Arial;13;1",
-											"left": 1061,
-											"top": 655,
+											"left": 901,
+											"top": 663,
 											"width": 215,
 											"height": 13,
 											"text": "ChineseStrategy"
@@ -746,8 +743,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1376,
-											"top": -96,
+											"left": 1056,
+											"top": -80,
 											"width": 80.68505859375,
 											"height": 13,
 											"text": "(from Model)"
@@ -760,15 +757,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1376,
-											"top": -96,
+											"left": 1056,
+											"top": -80,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1056,
-									"top": 648,
+									"left": 896,
+									"top": 656,
 									"width": 225,
 									"height": 25,
 									"stereotypeLabel": {
@@ -794,8 +791,8 @@
 										"$ref": "AAAAAAF9pBgccUoT4YM="
 									},
 									"font": "Arial;13;0",
-									"left": 1056,
-									"top": 673,
+									"left": 896,
+									"top": 681,
 									"width": 225,
 									"height": 10
 								},
@@ -819,8 +816,8 @@
 												"$ref": "AAAAAAF9pCllWEswgRQ="
 											},
 											"font": "Arial;13;0",
-											"left": 1061,
-											"top": 688,
+											"left": 901,
+											"top": 696,
 											"width": 215,
 											"height": 13,
 											"text": "-sortMovies(movies)",
@@ -828,8 +825,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1056,
-									"top": 683,
+									"left": 896,
+									"top": 691,
 									"width": 225,
 									"height": 23
 								},
@@ -844,8 +841,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 704,
-									"top": -80,
+									"left": 544,
+									"top": -72,
 									"width": 10,
 									"height": 10
 								},
@@ -860,16 +857,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 704,
-									"top": -80,
+									"left": 544,
+									"top": -72,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 1056,
-							"top": 648,
+							"left": 896,
+							"top": 656,
 							"width": 225,
 							"height": 161,
 							"nameCompartment": {
@@ -909,8 +906,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1021,
-									"top": 579,
+									"left": 861,
+									"top": 587,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -930,8 +927,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1011,
-									"top": 568,
+									"left": 851,
+									"top": 576,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -951,8 +948,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1042,
-									"top": 600,
+									"left": 882,
+									"top": 608,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -970,7 +967,7 @@
 								"$ref": "AAAAAAF9pBfeDEnrOvM="
 							},
 							"lineStyle": 1,
-							"points": "979:647;1085:545",
+							"points": "819:655;925:553",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF9pC+CqUzNrus="
@@ -1003,8 +1000,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1153,
-									"top": 589,
+									"left": 993,
+									"top": 597,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -1024,8 +1021,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1138,
-									"top": 589,
+									"left": 978,
+									"top": 597,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1045,8 +1042,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1182,
-									"top": 590,
+									"left": 1022,
+									"top": 598,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1064,7 +1061,7 @@
 								"$ref": "AAAAAAF9pBgccUoV0Ds="
 							},
 							"lineStyle": 1,
-							"points": "1168:647;1168:545",
+							"points": "1008:655;1008:553",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF9pC+aYkzfwtc="
@@ -1083,8 +1080,8 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;13;0",
-							"left": 1072,
-							"top": 256,
+							"left": 1152,
+							"top": 408,
 							"width": 193,
 							"height": 111,
 							"text": "interface Strategy\n{\n    sortMovies(movies: Movie[ ])\n}\n//Strategy 是共通的 interface"
@@ -1096,8 +1093,8 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;13;0",
-							"left": 752,
-							"top": 848,
+							"left": 592,
+							"top": 856,
 							"width": 273,
 							"height": 233,
 							"text": "class EnglishStrategy implements Stragety\n{\n    private sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            random(movie1~movie11)\n            return movie.recommended ? 1 : -1;\n        })\n    }\n}\n\n//英文電影會根據recommended挑選，從\nrecommended=true裡隨機挑一個推薦"
@@ -1109,8 +1106,8 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;13;0",
-							"left": 960,
-							"top": 1096,
+							"left": 800,
+							"top": 1104,
 							"width": 433,
 							"height": 205,
 							"text": "class ChineseStrategy implements Stragety\n{\n    private sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            choose two movies-> movieA, movieB;\n            return movieA.publishedDate > movieB.publishedDate ? 1 : -1;\n        })\n    }\n}\n\n//中文電影是隨機挑兩個movie比較出版日期，出版日期新的會背回傳"
@@ -1123,10 +1120,10 @@
 							},
 							"font": "Arial;13;0",
 							"left": 24,
-							"top": 632,
+							"top": 640,
 							"width": 545,
-							"height": 809,
-							"text": "class PTS_MovieStore\n{\n    allMovies: Movie[ ];\n    title: string;\n    recommended: boolean;\n    publishedDate: Date;\n    image: string;\n\n    constructor( )\n    {\n        const movie1 = new Movie('無聲', true, new Date(''2021-05-02'), \"1.jpg\");\n        const movie2 = new Movie('白日夢冒險王', false, new Date(''2021-02-11'), \"2.jpg\");\n        const movie3 = new Movie('訪客', false, new Date(''2020-11-29'), \"3.jpg\");\n        const movie4 = new Movie('媽!我阿榮啦', true, new Date(''2020-11-22'), \"4.jpg\");\n        const movie5 = new Movie('殺人之夏', false, new Date(''2020-05-12'), \"5.jpg\");\n        const movie6 = new Movie('無法辯護', false, new Date(''1968-12-23'), \"6.jpg\");\n        const movie7 = new Movie('靈佔', true, new Date(''2020-12-16'), \"7.jpg\");\n        const movie8 = new Movie('完美正義', false, new Date(''2020-12-30'), \"8.jpg\");\n        const movie9 = new Movie('再看我一眼', true, new Date(''2020-10-29'), \"9.jpg\");\n        const movie10 = new Movie('前世情人的情人', false, new Date(''1960-01-19'), \"10.jpg\");\n        const movie11 = new Movie('阿嬤的秘密', false, new Date(''1965-03-26'), \"11.jpg\");\n\n        this.allMovies = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, \n                                   movie8, movie9, movie10, movie11]\n\n         this.title = title;\n         this.recommended = recommended;\n         this.publishedDate = publishedDate;\n         this.image = image;\n    }\n    \n    public shoeHomePage(userLanguage: string)\n    {\n        let context: Context;\n        if(userLanguage == 'en')\n        {\n            context = new Context(new EnglishStrategy());\n        }\n        else if(userLanguage == 'zh')\n        {\n            context = new Context(new ChineseStrategy());\n        }\n        else if(userLanguage == 'ha')\n        {\n            context = new Context(new TaiwaneseHakkienStrategy());\n        }\n        else\n        {\n            context = new Context(new DafaultStrategy());\n        }\n        console.log(context.homePageMovies(this.allMovies));\n    }\n}\n//PTS_MovieStore陳列movie的相關資訊，然後使用者根據語言挑選需要的電影，\n推薦的電影會展示在較前面"
+							"height": 749,
+							"text": "class PTS_MovieStore\n{\n    allMovies: Movie[ ];\n    title: string;\n    recommended: boolean;\n    publishedDate: Date;\n    image: string;\n\n    constructor( )\n    {\n        const movie1 = new Movie('無聲', true, new Date(''2021-05-02'), \"1.jpg\");\n        const movie2 = new Movie('白日夢冒險王', false, new Date(''2021-02-11'), \"2.jpg\");\n        const movie3 = new Movie('訪客', false, new Date(''2020-11-29'), \"3.jpg\");\n        const movie4 = new Movie('媽!我阿榮啦', true, new Date(''2020-11-22'), \"4.jpg\");\n        const movie5 = new Movie('殺人之夏', false, new Date(''2020-05-12'), \"5.jpg\");\n        const movie6 = new Movie('無法辯護', false, new Date(''1968-12-23'), \"6.jpg\");\n        const movie7 = new Movie('靈佔', true, new Date(''2020-12-16'), \"7.jpg\");\n        const movie8 = new Movie('完美正義', false, new Date(''2020-12-30'), \"8.jpg\");\n        const movie9 = new Movie('再看我一眼', true, new Date(''2020-10-29'), \"9.jpg\");\n        const movie10 = new Movie('前世情人的情人', false, new Date(''1960-01-19'), \"10.jpg\");\n        const movie11 = new Movie('阿嬤的秘密', false, new Date(''1965-03-26'), \"11.jpg\");\n\n        this.allMovies = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, \n                                   movie8, movie9, movie10, movie11]\n\n         this.title = title;\n         this.recommended = recommended;\n         this.publishedDate = publishedDate;\n         this.image = image;\n    }\n    \n    private showHomePage(userLanguage: string)\n    {\n        let context: Context;\n        if(userLanguage == 'en')\n        {\n            context = new Context(new EnglishStrategy());\n        }\n        else if(userLanguage == 'zh')\n        {\n            context = new Context(new ChineseStrategy());\n        }\n        else if(userLanguage == 'ha')\n        {\n            context = new Context(new TaiwaneseHakkienStrategy());\n        }\n        console.log(context.homePageMovies(this.allMovies));\n    }\n}\n//PTS_MovieStore陳列movie的相關資訊，然後使用者根據語言挑選需要的電影，\n推薦的電影會展示在較前面"
 						},
 						{
 							"_type": "UMLNoteView",
@@ -1169,8 +1166,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -1168,
-											"top": -1360,
+											"left": -1488,
+											"top": -1344,
 											"height": 13
 										},
 										{
@@ -1180,8 +1177,8 @@
 												"$ref": "AAAAAAF9/NHj88l0zu8="
 											},
 											"font": "Arial;13;1",
-											"left": 1325,
-											"top": 655,
+											"left": 1165,
+											"top": 663,
 											"width": 214,
 											"height": 13,
 											"text": "TaiwaneseHakkienStrategy"
@@ -1194,8 +1191,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -1168,
-											"top": -1360,
+											"left": -1488,
+											"top": -1344,
 											"width": 80.68505859375,
 											"height": 13,
 											"text": "(from Model)"
@@ -1208,15 +1205,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -1168,
-											"top": -1360,
+											"left": -1488,
+											"top": -1344,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1320,
-									"top": 648,
+									"left": 1160,
+									"top": 656,
 									"width": 224,
 									"height": 25,
 									"stereotypeLabel": {
@@ -1242,8 +1239,8 @@
 										"$ref": "AAAAAAF9/NHj8clxjmA="
 									},
 									"font": "Arial;13;0",
-									"left": 1320,
-									"top": 673,
+									"left": 1160,
+									"top": 681,
 									"width": 224,
 									"height": 10
 								},
@@ -1267,8 +1264,8 @@
 												"$ref": "AAAAAAF9/NMlUc1hiTA="
 											},
 											"font": "Arial;13;0",
-											"left": 1325,
-											"top": 688,
+											"left": 1165,
+											"top": 696,
 											"width": 214,
 											"height": 13,
 											"text": "-sortMovies(movies)",
@@ -1276,8 +1273,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1320,
-									"top": 683,
+									"left": 1160,
+									"top": 691,
 									"width": 224,
 									"height": 23
 								},
@@ -1292,8 +1289,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -584,
-									"top": -680,
+									"left": -744,
+									"top": -672,
 									"width": 10,
 									"height": 10
 								},
@@ -1308,16 +1305,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -584,
-									"top": -680,
+									"left": -744,
+									"top": -672,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 1320,
-							"top": 648,
+							"left": 1160,
+							"top": 656,
 							"width": 224,
 							"height": 160,
 							"nameCompartment": {
@@ -1357,8 +1354,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1289,
-									"top": 600,
+									"left": 1129,
+									"top": 608,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -1378,8 +1375,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1278,
-									"top": 611,
+									"left": 1118,
+									"top": 619,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1399,8 +1396,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1310,
-									"top": 579,
+									"left": 1150,
+									"top": 587,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1418,7 +1415,7 @@
 								"$ref": "AAAAAAF9/NHj88lzOfw="
 							},
 							"lineStyle": 1,
-							"points": "1351:647;1249:545",
+							"points": "1191:655;1089:553",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF9/NLcTMu1fSU="
@@ -1437,8 +1434,8 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;13;0",
-							"left": 1264,
-							"top": 848,
+							"left": 1104,
+							"top": 856,
 							"width": 345,
 							"height": 201,
 							"text": "class TaiwaneseHakkienStrategy implements Stragety\n{\n    private sortMovies(movies: Movie[ ])\n    {\n        movies.sort((movie1~movie11)=>\n        {\n            return movie.pulishedDate < \"1970-01-01\" ? 1 : -1;\n        })\n    }\n}\n//台語電影是設定只回傳在1970年之前出版的電影"
@@ -1465,39 +1462,9 @@
 							"font": "Arial;13;0",
 							"left": 328,
 							"top": 104,
-							"width": 450.5234375,
-							"height": 57,
+							"width": 451.99609375,
+							"height": 68,
 							"text": "建一個PTS_MovieStore物件，將使用者的語言輸入，PTS_MovieStore連接\ninterface stragety，關於strategy的實作就在interface下面把細節寫得更仔細\n就可以，movie資訊放在PTS_MovieStore裡"
-						},
-						{
-							"_type": "FreelineEdgeView",
-							"_id": "AAAAAAF+CnqH2lKnuWU=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"lineStyle": 1,
-							"points": "440:368;440:368"
-						},
-						{
-							"_type": "FreelineEdgeView",
-							"_id": "AAAAAAF+CnqMhVK2IT0=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"lineStyle": 1,
-							"points": "440:384;440:384"
-						},
-						{
-							"_type": "FreelineEdgeView",
-							"_id": "AAAAAAF+CnqPN1LFcM4=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"lineStyle": 1,
-							"points": "440:384;440:384"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -1507,7 +1474,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "872:808;872:848"
+							"points": "712:816;712:856"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -1517,7 +1484,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "1168:808;1168:1096"
+							"points": "1008:816;1008:1104"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -1527,7 +1494,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "1440:800;1440:848"
+							"points": "1280:808;1280:856"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -1537,7 +1504,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "1432:824;1432:824"
+							"points": "1272:832;1272:832"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -1547,7 +1514,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "1432:824;1432:824"
+							"points": "1272:832;1272:832"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -1557,7 +1524,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "1168:368;1168:368"
+							"points": "1008:376;1008:376"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -1567,7 +1534,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "1168:368;1168:368"
+							"points": "1008:376;1008:376"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -1577,7 +1544,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "1168:368;1168:384"
+							"points": "1152:464;1120:464"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -1587,7 +1554,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "288:536;288:536"
+							"points": "288:544;288:544"
 						},
 						{
 							"_type": "FreelineEdgeView",
@@ -1597,7 +1564,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "288:632;288:544"
+							"points": "288:640;288:552"
 						},
 						{
 							"_type": "UMLAssociationView",
@@ -1620,8 +1587,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 728,
-									"top": 443,
+									"left": 648,
+									"top": 451,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -1641,8 +1608,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 728,
-									"top": 428,
+									"left": 648,
+									"top": 436,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1662,8 +1629,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 728,
-									"top": 473,
+									"left": 648,
+									"top": 481,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1684,7 +1651,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 426,
-									"top": 443,
+									"top": 451,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -1705,7 +1672,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 429,
-									"top": 429,
+									"top": 437,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -1726,7 +1693,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 422,
-									"top": 470,
+									"top": 478,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -1746,8 +1713,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1029,
-									"top": 443,
+									"left": 869,
+									"top": 451,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -1766,8 +1733,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1026,
-									"top": 429,
+									"left": 866,
+									"top": 437,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -1786,8 +1753,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1033,
-									"top": 470,
+									"left": 873,
+									"top": 478,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -1806,8 +1773,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -216,
-									"top": -632,
+									"left": -376,
+									"top": -624,
 									"width": 10,
 									"height": 10
 								},
@@ -1822,8 +1789,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -216,
-									"top": -632,
+									"left": -376,
+									"top": -624,
 									"width": 10,
 									"height": 10
 								}
@@ -1836,7 +1803,7 @@
 								"$ref": "AAAAAAF9pBXx6UmDDUk="
 							},
 							"lineStyle": 1,
-							"points": "401:464;1055:464",
+							"points": "401:472;895:472",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF+Cp1zmYxxwHI="
@@ -2122,7 +2089,8 @@
 								"$ref": "AAAAAAF9pBXx6EmBrPY="
 							},
 							"name": "title",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2131,7 +2099,8 @@
 								"$ref": "AAAAAAF9pBXx6EmBrPY="
 							},
 							"name": "recommended",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2140,7 +2109,8 @@
 								"$ref": "AAAAAAF9pBXx6EmBrPY="
 							},
 							"name": "publishedDate",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2149,7 +2119,8 @@
 								"$ref": "AAAAAAF9pBXx6EmBrPY="
 							},
 							"name": "image",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					],
 					"operations": [
