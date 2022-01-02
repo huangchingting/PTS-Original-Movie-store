@@ -2691,8 +2691,8 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;13;0",
-							"left": 120,
-							"top": 544,
+							"left": 504,
+							"top": 336,
 							"width": 545,
 							"height": 685,
 							"text": "class PTS_MovieStore\n{\n    allMovies: Movie[ ];\n    constructor( )\n    {\n        const movie1 = new Movie('無聲', true, new Date(''2021-05-02'), \"1.jpg\");\n        const movie2 = new Movie('白日夢冒險王', false, new Date(''2021-02-11'), \"2.jpg\");\n        const movie3 = new Movie('訪客', false, new Date(''2020-11-29'), \"3.jpg\");\n        const movie4 = new Movie('媽!我阿榮啦', true, new Date(''2020-11-22'), \"4.jpg\");\n        const movie5 = new Movie('殺人之夏', false, new Date(''2020-05-12'), \"5.jpg\");\n        const movie6 = new Movie('無法辯護', false, new Date(''1968-12-23'), \"6.jpg\");\n        const movie7 = new Movie('靈佔', true, new Date(''2020-12-16'), \"7.jpg\");\n        const movie8 = new Movie('完美正義', false, new Date(''2020-12-30'), \"8.jpg\");\n        const movie9 = new Movie('再看我一眼', true, new Date(''2020-10-29'), \"9.jpg\");\n        const movie10 = new Movie('前世情人的情人', false, new Date(''1960-01-19'), \"10.jpg\");\n        const movie11 = new Movie('阿嬤的秘密', false, new Date(''1965-03-26'), \"11.jpg\");\n\n        this.allMovies = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, \n                                   movie8, movie9, movie10, movie11]\n    }\n    \n    public shoeHomePage(userLanguage: string)\n    {\n        let context: Context;\n        if(userLanguage == 'en')\n        {\n            context = new Context(new EnglishStrategy());\n        }\n        else if(userLanguage == 'zh')\n        {\n            context = new Context(new ChineseStrategy());\n        }\n        else if(userLanguage == 'ha')\n        {\n            context = new Context(new TaiwaneseHakkienStrategy());\n        }\n        else\n        {\n            context = new Context(new DafaultStrategy());\n        }\n        console.log(context.homePageMovies(this.allMovies));\n    }\n}\n//PTS_MovieStore陳列movie的相關資訊，然後使用者根據語言挑選需要的電影，\n推薦的電影會展示在較前面"
@@ -3582,7 +3582,7 @@
 							},
 							"font": "Arial;13;0",
 							"lineStyle": 1,
-							"points": "736:1144;664:1144"
+							"points": "848:1064;848:1016"
 						},
 						{
 							"_type": "FreelineEdgeView",
