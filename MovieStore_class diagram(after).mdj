@@ -2705,7 +2705,7 @@
 							},
 							"font": "Arial;13;0",
 							"left": 24,
-							"top": 184,
+							"top": 192,
 							"width": 273,
 							"height": 128,
 							"text": "const movieStore = new PTS_MovieStore( )\nconsole.log('zh')\nmovieStore.showHomePage('zh')\nconsole.log('en')\nmovieStore.showHomePage('en')\nconsole.log('ha')\nmovieStore.showHomePage('ha')"
